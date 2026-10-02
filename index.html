@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StockSure — Availability confidence for NOVA CART</title>
+  <meta name="description" content="StockSure: an availability-confidence engine that stops NOVA CART from selling what local stores don't have.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap bar">
+      <div class="brand"><span class="dot"></span><b>StockSure</b><span class="sub">for NOVA CART</span></div>
+      <nav id="nav">
+        <button data-a="tab" data-t="diagnosis">Diagnosis</button>
+        <button data-a="tab" data-t="customer">Customer app</button>
+        <button data-a="tab" data-t="store">Store console</button>
+        <button data-a="tab" data-t="impact">Impact</button>
+      </nav>
+      <div class="ctrl">
+        <span id="clock" class="clock"></span>
+        <button class="ghost" data-a="advance" title="Time passes, stock sells out, confidence decays">+6h</button>
+        <button class="ghost" data-a="reset">Reset</button>
+      </div>
+    </div>
+  </header>
+  <main class="wrap" id="view"></main>
+  <footer class="wrap foot">Prototype for the PromptWars Business Rescue Challenge. NOVA CART is fictional; all case figures come from the brief, assumptions are labelled.</footer>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
